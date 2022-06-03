@@ -179,17 +179,79 @@ body {
     width: 90%;
     height: 90%;
     display: flex;
+    background-color: #FFF;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 }
 
-.header {
+.header-container{
+    width: 1729px;
+    height: 150px;
     display: flex;
+    background-color: #f3e69f;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 }
 
-.logo-img img {
-    width: 15%;
-    display: flex;
+.logo-img {
     padding: 1rem;
 }
 
+.logo-img img {
+    width: 100px;
+    margin-left: 80px;
+}
 
+.title {
+    display: inline-block;
+    padding-top: 52px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 380px;
+}
+
+.title h1 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.title h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #9BA141;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.title h2 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul {
+    margin-top: 52px;
+    margin-left: 100px;
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 0.7rem;
+    display: inline-block;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #47331B;
+    font-weight: 600;
+}
+
+.menu ul li a:hover {
+    color: #9BA141;
+}
