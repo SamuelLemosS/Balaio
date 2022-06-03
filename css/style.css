@@ -173,7 +173,7 @@ body {
     }
 }
 
-/* Estilização da tela 'FEIRA' */
+/* Estilização da tela 'FEIRA' - 'market' */
 
 .feira-container {
     width: 90%;
@@ -200,7 +200,7 @@ body {
     margin-left: 80px;
 }
 
-.title {
+.feira-title {
     display: inline-block;
     padding-top: 52px;
     align-items: center;
@@ -208,12 +208,12 @@ body {
     margin-left: 380px;
 }
 
-.title h1 {
+.feira-title h1 {
     font-size: 22px;
     text-transform: uppercase;
 }
 
-.title h1::after {
+.feira-title h1::after {
     content: '';
     display: block;
     width: 5rem;
@@ -224,7 +224,7 @@ body {
     border-radius: 10px;
 }
 
-.title h2 {
+.feira-title h2 {
     font-size: 15px;
     text-align: center;
 }
