@@ -129,7 +129,7 @@ body {
     color: #000000be;
 }
 
-.login-button button {
+.login-button input {
     width: 100%;
     margin-top: 2.5rem;
     border: none;
@@ -141,13 +141,13 @@ body {
     position: relative; 
 }
 
-.login-button button:hover {
+.login-button input:hover {
     transform: translateY(-5px);
     background-color: #a3aa45;
     box-shadow: 0px 4px 3px black;
 }
 
-.login-button button a {
+.login-button input {
     text-decoration: none;
     font-size: 0.93rem;
     font-weight: 500;
@@ -181,4 +181,125 @@ body {
     }
 }
 
+/* Estilização da tela 'FEIRA' - 'market' */
 
+.feira-container {
+    width: 90%;
+    height: 100%;
+    background-color: #FFF;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+header {
+    width: 100%;
+    height: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #f3e69f;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.logo-img {
+    padding: 1rem;
+
+}
+
+.logo-img img {
+    width: 100px;
+}
+
+.feira-title {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.feira-title h1 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.feira-title h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #9BA141;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.feira-title h2 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    display: block;
+    padding: 8px 16px 8px 16px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.menu ul li a:hover {
+    color: #FFF;
+    background-color: #9BA141;
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 3px black;
+}
+
+/* Card sections */
+
+.cards-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards-container div {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.cards-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+}
+
+.card h2 {
+    font-size: 21px;
+    margin: 5px;
+    box-shadow: 7px 7px 13px 0px rgb(#9BA141);
+}
+
+.card:hover {
+    background-color: #9BA141;
+    transform: translateY(-5px);
+    cursor: pointer;
+    color: #FFF;
+    box-shadow: 0px 4px 3px black;
+} 

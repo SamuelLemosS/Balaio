@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/login.js"></script>
     <title>Balaio</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
         </div>
 
         <div class="login">
-            <form action="#">
+            <form action="#" id="login-form">
                 <div class="login-header">
                     <div class="title">
                         <h1>Login</h1>
@@ -28,17 +29,17 @@
                 <div class="input-group">
                     <div class="input-box">
                         <label for="login">Login</label>
-                        <input id="login" type="text" name="login" placeholder="Telefone, Email ou Nome de  usuário" required>
+                        <input class="login" id="login" type="text" name="login" placeholder="Telefone, Email ou Nome de  usuário" required>
                     </div>
                     
                     <div class="input-box">
                         <label for="password">Senha</label>
-                        <input id="password" type="text" name="password" placeholder="Senha" required>
+                        <input class="senha" id="password" type="text" name="password" placeholder="Senha" required>
                     </div>
                 </div>
 
                 <div class="login-button">
-                    <button><a href="market.html">Login</a></button>
+                    <input type="submit" value="Login" id="login-form-submit">
                 </div>
             </form>
         </div>

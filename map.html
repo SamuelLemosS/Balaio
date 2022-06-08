@@ -4,17 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/map.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script type="module" src="js/map.js">src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCksMX3ID_V_-Arh2LxtuHWIT7gREyZ4ss&callback=initMap&v=weekly"
-        defer</script>
     <title>Balaio - Map</title>
 </head>
 <body>
-    <div class="container">
-        <h3>Clique no icone de feira para ir para lista de feirantes</h3>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1kuMZRiF1Ktkk5sbU6H3qo15vfLmrsz8&ehbc=2E312F" width="640" height="480"></iframe>
-    </div>
+    <div class="feira-container">
+        <header>
+            <div class="logo-img">
+                <a href="index.html"><img src="image/Balaio02.png" alt="Logo"></a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="map.html">Mapa</a></li>
+                    <li><a href="#">Carrinho</a></li>
+                    <li><a href="#">Agenda</a></li>
+                    <li><a href="#">Perfil</a></li>
+                </ul>
+            </nav>
+        </header>
+    <figure class="map">
+        <figcaption>Clique no icone de feira para ir para lista de feirantes</figcaption>
+        <img src="image/Map.png" usemap="#feiras">
+    </figure>
+    <map name="feiras">
+        <area shape="circle" coords="550,380,100" href="market.html">
+    </map>
 </body>
 </html>
