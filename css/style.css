@@ -63,13 +63,13 @@ body {
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     position: relative; 
 }
 
 .register-button button:hover {
     background-color: #a3aa45;
-    top: -4px;
+    transform: translateY(-5px);
     box-shadow: 0px 4px 3px black;
 }
 
@@ -137,12 +137,12 @@ body {
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     position: relative; 
 }
 
 .login-button button:hover {
-    top: -4px;
+    transform: translateY(-5px);
     background-color: #a3aa45;
     box-shadow: 0px 4px 3px black;
 }
@@ -185,8 +185,7 @@ body {
 
 .feira-container {
     width: 90%;
-    height: 90%;
-    display: flex;
+    height: 100%;
     background-color: #FFF;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 }
@@ -196,7 +195,7 @@ header {
     height: 18%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     background-color: #f3e69f;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
@@ -204,11 +203,11 @@ header {
 
 .logo-img {
     padding: 1rem;
+
 }
 
 .logo-img img {
     width: 100px;
-    margin-left: 80px;
 }
 
 .feira-title {
@@ -242,6 +241,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    
 }
 
 .menu ul li a{
@@ -251,28 +251,28 @@ header {
     display: block;
     padding: 8px 16px 8px 16px;
     border-radius: 10px;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     position: relative;
 }
 
 .menu ul li a:hover {
     color: #FFF;
     background-color: #9BA141;
-    top: -4px;
+    transform: translateY(-5px);
     box-shadow: 0px 4px 3px black;
 }
 
 /* Card sections */
 
 .cards-container {
-    max-width: 1400px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 40px auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 .cards-container div {
-    flex: 1 1 350px;
+    flex: 1 1 300px;
     margin: 10px;
 }
 
@@ -281,56 +281,25 @@ header {
     border-radius: 10px;
 }
 
-
-/* Versão de rian 
-main.cards {
-    display: flex;  
-    padding: 32px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+.card {
+    border-radius: 10px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
 }
 
-main.cards section.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    width: 256px;
-    margin-left: 70px; 
+.card h2 {
+    font-size: 21px;
+    margin: 5px;
+    box-shadow: 7px 7px 13px 0px rgb(#9BA141);
 }
 
-main.cards section.card:first-child {
-    margin-left: 0;
-    problemas resolvido no first:child pois a margin-left da primeira imagem tende a permanecer errado caso não seja alterado
-}
-
-main.cards section.card .icon {
-    width: 300px;
-    height: 300px;
-}
-
-main.cards section.card img {
-    width: 100%;
-}
-
-@media screen and (max-width: 720px) {
-    main.cards {
-        flex-direction: column;
-    }
-
-    main.cards section.card {
-        margin-left: 0;
-        margin-bottom: 32px;
-
-    }
-
-    main.cards section.card:last-child {
-        margin-bottom: 0;
-    }
-    
-    main.cards section.card button {
-        font-size: 70%;
-    }
-
-}*/
+.card:hover {
+    background-color: #9BA141;
+    transform: translateY(-5px);
+    cursor: pointer;
+    color: #FFF;
+    box-shadow: 0px 4px 3px black;
+} 
